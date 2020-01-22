@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng Nhập"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#FF5722"
+        android:layout_marginTop="50dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="Tên đăng nhập"
+        android:id="@+id/edtUsername"
+        android:textColor="#111"
+        android:backgroundTint="#0BB30F"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:textColor="#111"
+        android:backgroundTint="#0CA537"
+        android:id="@+id/edtPassword"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_custom_1"
+        android:text="ĐĂNG NHẬP"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickLogin"/>
+</LinearLayout>

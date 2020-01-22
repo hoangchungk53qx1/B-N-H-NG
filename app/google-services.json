@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "338106588821",
+    "firebase_url": "https://banhang-ce447.firebaseio.com",
+    "project_id": "banhang-ce447",
+    "storage_bucket": "banhang-ce447.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338106588821:android:3a9a6f57ecb3927d28c59c",
+        "android_client_info": {
+          "package_name": "com.doan.banhang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338106588821-8elbfvf0ac480p4k8on62uvhfee3am6i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.doan.banhang",
+            "certificate_hash": "1bce2cceb63936e069b7666ef0b2dea729f7d8b4"
+          }
+        },
+        {
+          "client_id": "338106588821-1b8akiq3hvhftpprvtt759a9kfls944u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIeVpjKBk6LyN5pNczGF-VwPFPry4lNGo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338106588821-1b8akiq3hvhftpprvtt759a9kfls944u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

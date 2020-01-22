@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:cardBackgroundColor="#FF5722">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_back_white"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:onClick="onClickCancel"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:hint="Tìm kiếm..."
+                android:id="@+id/edtSearch"
+                android:singleLine="true"
+                android:paddingStart="10dp"
+                android:paddingEnd="15dp"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textColorHint="#DFDFDF"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recOrder"/>
+</LinearLayout>

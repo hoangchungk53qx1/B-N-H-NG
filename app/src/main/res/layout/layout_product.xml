@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#45111111"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textColor="#111"
+            android:text="Kho"/>
+        <TextView
+            android:id="@+id/txtAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#45111111"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textColor="#111"
+            android:text="Thương hiệu"/>
+        <TextView
+            android:id="@+id/txtTrademark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adidas"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#45111111"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textColor="#111"
+            android:text="Kiểu dáng"/>
+
+        <TextView
+            android:id="@+id/txtDesigns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cổ thấp"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#45111111"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textColor="#111"
+            android:text="Chất liệu"/>
+
+        <TextView
+            android:id="@+id/txtMaterial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhân tạo"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#45111111"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textColor="#111"
+            android:text="Xuất xứ"/>
+
+        <TextView
+            android:id="@+id/txtOrigin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dệt"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#45111111"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textColor="#111"
+            android:text="Màn hình"/>
+        <TextView
+            android:id="@+id/txtScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đài loan"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#45111111"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:textColor="#111"
+            android:layout_height="wrap_content"
+            android:text="Máy ảnh"/>
+        <TextView
+            android:id="@+id/txtCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TT Năm Căn, Cà Mau"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#45111111"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textColor="#111"
+            android:text="CPU"/>
+        <TextView
+            android:id="@+id/txtCPU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đài loan"
+            android:textColor="#111"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#45111111"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:textColor="#111"
+            android:layout_height="wrap_content"
+            android:text="GPU"/>
+        <TextView
+            android:id="@+id/txtGPU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TT Năm Căn, Cà Mau"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#45111111"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textColor="#111"
+            android:text="Ram"/>
+        <TextView
+            android:id="@+id/txtRam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đài loan"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#45111111"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:textColor="#111"
+            android:layout_height="wrap_content"
+            android:text="Dung lượng Pin"/>
+        <TextView
+            android:id="@+id/txtPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TT Năm Căn, Cà Mau"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#45111111"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textColor="#111"
+            android:text="Hệ điều hành"/>
+        <TextView
+            android:id="@+id/txtOperatingSystem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đài loan"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#45111111"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:textColor="#111"
+            android:layout_height="wrap_content"
+            android:text="Kích thước"/>
+        <TextView
+            android:id="@+id/txtSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TT Năm Căn, Cà Mau"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#45111111"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:textColor="#111"
+            android:layout_height="wrap_content"
+            android:text="Màu sắc"/>
+        <TextView
+            android:id="@+id/txtColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TT Năm Căn, Cà Mau"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#45111111"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:textColor="#111"
+            android:layout_height="wrap_content"
+            android:text="Cân nặng"/>
+        <TextView
+            android:id="@+id/txtWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TT Năm Căn, Cà Mau"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#45111111"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:textColor="#111"
+            android:layout_height="wrap_content"
+            android:text="Tình trạng"/>
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TT Năm Căn, Cà Mau"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#45111111"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:textColor="#111"
+            android:layout_height="wrap_content"
+            android:text="Kích thước đóng gói"/>
+        <TextView
+            android:id="@+id/txtPackingSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TT Năm Căn, Cà Mau"
+            android:textColor="#111"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#45111111"/>
+</LinearLayout>

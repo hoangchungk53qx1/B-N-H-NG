@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:title="Thêm Sản phẩm"
+                android:id="@+id/toolbar"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="4dp"
+            android:id="@+id/recPictureIntroduce"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#20111111"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="10">
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:hint="Tên sản phẩm"
+                android:background="#fff"
+                android:singleLine="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:maxLength="120"
+                android:text="Điện thoại iPhone 11 Pro Max 64GB"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="0/120"
+                android:id="@+id/txtNameCount"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#20111111"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:background="#fff"
+            android:hint="Mô tả sản phẩm"
+            android:gravity="top"
+            android:padding="10dp"
+            android:id="@+id/edtIntroduce"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cần thêm 100 ký tự nữa"
+            android:textColor="#FF5722"
+            android:padding="10dp"
+            android:id="@+id/txtIntroduceCount"
+            android:background="#20111111"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thương hiệu"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="#111"/>
+            <EditText
+                android:text="Apple"
+                android:id="@+id/edtTrademark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Ví dụ: Apple"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:gravity="end|center_vertical"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#27111111"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kiểu dáng"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="#111"/>
+            <EditText
+                android:text="Nguyên Khối"
+                android:id="@+id/edtDesigns"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Ví dụ: Nguyên khối"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:gravity="end|center_vertical"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#27111111"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chất liệu"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="#111"/>
+            <EditText
+                android:text=":Khung thép không gỉ và Mặt lưng kính cường lực"
+                android:id="@+id/edtMaterial"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Ví dụ: Dát vàng"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:gravity="end|center_vertical"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#27111111"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xuất xứ"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="#111"/>
+            <EditText
+                android:text="Việt Nam"
+                android:id="@+id/edtOrigin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Ví dụ: Mỹ tho"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:gravity="end|center_vertical"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#27111111"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Màn hình"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="#111"/>
+            <EditText
+                android:text="OLED, 6.5 inches Super Retina XDR"
+                android:id="@+id/edtScreen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Ví dụ: OLED, 5.8 inches"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:gravity="end|center_vertical"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#27111111"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camera"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="#111"/>
+            <EditText
+                android:text="3 camera 12 MP"
+                android:id="@+id/edtCamera"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Ví dụ: 3 camera 12 MP"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:gravity="end|center_vertical"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#27111111"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPU"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="#111"/>
+            <EditText
+                android:text="Apple A13 Bionic 6 nhân"
+                android:id="@+id/edtCPU"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Ví dụ: Apple A13 Bionic 6 nhân"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:gravity="end|center_vertical"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#27111111"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GPU"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="#111"/>
+            <EditText
+                android:text="Apple GPU 4 nhân"
+                android:id="@+id/edtGPU"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Ví dụ: Apple GPU 4 nhân"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:gravity="end|center_vertical"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#27111111"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ram"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="#111"/>
+            <EditText
+                android:text="4 GB"
+                android:id="@+id/edtRam"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Ví dụ: 4 GB"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:gravity="end|center_vertical"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#27111111"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pin"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="#111"/>
+            <EditText
+                android:text="3969 mAh, có sạc nhanh"
+                android:id="@+id/edtPin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Ví dụ: 3046 mAh"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:gravity="end|center_vertical"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#27111111"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hệ điều hành"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="#111"/>
+            <EditText
+                android:text="iOS 13"
+                android:id="@+id/edtOperatingSystem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Ví dụ: iOS 13"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:gravity="end|center_vertical"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#27111111"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kích thước"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="#111"/>
+            <EditText
+                android:text="158*77.8*8.1 mm"
+                android:id="@+id/edtSize"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Ví dụ: 144*71.4*8.1 mm"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:gravity="end|center_vertical"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#27111111"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_add_product_price" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giá"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="#111"/>
+            <EditText
+                android:text="33990000"
+                android:id="@+id/edtPrice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical"
+                android:hint="Đặt giá"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:inputType="number"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1111"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="9dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_add_product_stock" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kho hàng"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="#111"/>
+            <EditText
+                android:text="1000"
+                android:id="@+id/edtAmount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Số lượng"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:inputType="number"
+                android:gravity="end|center_vertical"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1111"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="9dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_variation" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Màu sắc"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="#111"/>
+            <EditText
+                android:text="Bạc, Xám, Xanh lá, Vàng đồng"
+                android:id="@+id/edtColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="end|center_vertical"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:hint="Màu sắc" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1111"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="9dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_addproduct_weight" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cân nặng"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="#111"/>
+            <EditText
+                android:text="226g"
+                android:id="@+id/edtWeight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Cân nặng"
+                android:gravity="end|center_vertical"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1111"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="9dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_reportthisuser" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tình trạng"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="#111"/>
+            <EditText
+                android:text="Mới"
+                android:id="@+id/edtStatus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Mới"
+                android:gravity="end|center_vertical"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1111"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_add_product_packagingsize" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kích thước đóng gói"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="#111"/>
+            <EditText
+                android:text="20*20*10 cm"
+                android:id="@+id/edtPackingSize"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="xx * xx * xx"
+                android:gravity="end|center_vertical"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1111"
+            android:layout_marginBottom="30dp"/>
+        <Button
+            android:onClick="onClickAddOrder"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Thêm Sản Phẩm"
+            android:background="@drawable/ic_custom_6"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
